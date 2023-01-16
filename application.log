@@ -1,0 +1,43 @@
+12:54:12,962 |-INFO in ch.qos.logback.classic.LoggerContext[test] - Could NOT find resource [logback-test.xml]
+12:54:12,963 |-INFO in ch.qos.logback.classic.LoggerContext[test] - Found resource [logback.xml] at [file:/target/test-classes/logback.xml]
+12:54:13,050 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+12:54:13,059 |-INFO in ch.qos.logback.classic.joran.action.ContextNameAction - Setting logger context name as [test]
+12:54:13,059 |-INFO in ch.qos.logback.classic.joran.action.JMXConfiguratorAction - begin
+12:54:13,172 |-INFO in ch.qos.logback.core.joran.action.StatusListenerAction - Added status listener of type [ch.qos.logback.core.status.OnConsoleStatusListener]
+12:54:13,201 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+12:54:13,204 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+12:54:13,230 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.telrock] to DEBUG
+12:54:13,231 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.springframework] to INFO
+12:54:13,232 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.mongodb.driver.connection] to WARN
+12:54:13,232 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.springframework.cloud.sleuth.log] to INFO
+12:54:13,232 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [common.jmx] to ERROR
+12:54:13,232 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [org.restlet] to ERROR
+12:54:13,232 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+12:54:13,232 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+12:54:13,233 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+12:54:13,233 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@7f8a9499 - Registering current configuration as safe fallback point
+2021-10-10 12:54:13.510 [main] INFO  [no_trace_id, no_span_id] [no_trans_id] [no_parent_id] [no_env] com.google.Application - The incoming request: null
+2021-10-10 12:54:13.587 [main] INFO  [no_trace_id, no_span_id] [no_trans_id] [no_parent_id] [no_env] com.google.Application - The incoming request:
+2021-10-10 12:54:13.592 [main] INFO  [no_trace_id, no_span_id] [no_trans_id] [no_parent_id] [no_env] com.google.Application - The incoming request: {"commandType":"command","id":"4444333322221111","hostReferences":{"key":"value"},"decisionFilters":{},"geoData":null,"data":"data","whenOccurred":"2021-10-10T12:54:13.592Z[Europe/London]"}
+2021-10-10 12:54:13.605 [main] INFO  [no_trace_id, no_span_id] [no_trans_id] [no_parent_id] [no_env] com.google.Application - The incoming request: {
+	"contactStrategy": {
+		"strategyType": "SINGLE",
+		"contact": {
+			"channel": "EMAIL",
+			"address": "address@telrock.com",
+			"sender": "sender@telrock.com"
+		}
+	},
+	"subject": "Demo Email",
+	"body": "test",
+	"hostReferences": {
+		"Account Number": "4155796342057211"
+	},
+	"decisionFilters": {
+	},
+	"geoData": {
+		"languageCode": "ENG",
+		"countryCode": "GBR",
+		"timeZone": "Europe/London"
+	}
+}
