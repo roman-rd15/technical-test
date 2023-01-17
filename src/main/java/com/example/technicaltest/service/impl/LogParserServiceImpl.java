@@ -29,7 +29,7 @@ public class LogParserServiceImpl implements LogParserService {
             final BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(fileInputStream));
             String strLine;
             while ((strLine = bufferedReader.readLine()) != null) {
-                Matcher matcher = CARD_PATTERN.matcher(strLine);
+                final Matcher matcher = CARD_PATTERN.matcher(strLine);
                 if (matcher.find()) {
                     stringBuilder.append(matcher.replaceAll(CARD_MASK)).append(System.lineSeparator());
                     continue;
